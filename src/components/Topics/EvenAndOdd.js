@@ -42,7 +42,7 @@ class EvenAndOdd extends Component {
       <div className="puzzleBox evenAndOddPB">
         <h4>Evens and Odds</h4>
         <input className="inputLine" onChange={(e) => this.handleInputChange(e.target.value)} />
-        <button className="confirmationButton" onClick={this.sortEvenAndOdd}>Sort</button>
+        <button className="confirmationButton" onClick={this.sortEvenAndOdd}>Split</button>
         <span className="resultsBox">Evens: [{this.state.evenArray.map((num, i, arr) =>
           (i < arr.length - 1) ? `${num},` : `${num}`)}]</span>
         <span className="resultsBox">Odds: [{this.state.oddArray.map((num, i, arr) =>
